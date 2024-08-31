@@ -4113,3 +4113,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration EmployeeRepositoryT
 2024-08-31 17:35:24,597 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@62846087{/help,null,AVAILABLE}
 2024-08-31 17:35:24,745 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@611cf929{HTTP/1.1, (http/1.1)}{127.0.0.1:53192}
 2024-08-31 17:35:24,871 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@25e353d6{STARTING}[10.0.18,sto=0] @296193ms
+2024-08-31 18:29:16,674 [Worker-40: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:demo:0.0.1-SNAPSHOT @ C:\Users\ankit\eclipse-workspace_Spring\EmployeeApplication\pom.xml.
