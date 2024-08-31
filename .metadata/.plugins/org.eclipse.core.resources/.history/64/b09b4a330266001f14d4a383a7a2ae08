@@ -1,0 +1,37 @@
+package com.example.demo.ServiceTest;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
+import com.EmployeeApplication.DAO.EmployeeDatabase;
+import com.EmployeeApplication.Model.Employee;
+
+public class EmployeeServiceTest {
+	
+	
+	private static final String name= "TestUser";
+	private static final String desgination ="TestUser";
+	private static final String company ="TestUser";
+	
+	@Mock
+	private EmployeeDatabase emprepository;
+	
+	@Test
+	private void should_save_emp()
+	{
+		
+		Employee emp = getEmployee();
+	}
+
+	
+	
+	private Employee getEmployeeRequest() {
+		// TODO Auto-generated method stub
+		Employee empreq = new Employee();
+		empreq.setCompany(company);
+		empreq.setDesignation(desgination);
+		empreq.setName(name);
+		
+		return empreq;
+	}
+}

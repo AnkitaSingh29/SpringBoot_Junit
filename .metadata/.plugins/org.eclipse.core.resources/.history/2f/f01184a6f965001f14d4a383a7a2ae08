@@ -1,0 +1,7 @@
+package com.example.demo.EmployeeRequest;
+
+public class EmployeeRequest {
+	private String name;
+	private String designation;
+	private String company;
+}

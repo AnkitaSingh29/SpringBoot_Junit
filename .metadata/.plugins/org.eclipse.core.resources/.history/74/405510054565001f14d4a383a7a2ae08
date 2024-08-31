@@ -1,0 +1,5 @@
+package com.EmployeeApplication.DTO;
+
+public class EmployeesDTO {
+	List<Employee> employeesDTO;
+}

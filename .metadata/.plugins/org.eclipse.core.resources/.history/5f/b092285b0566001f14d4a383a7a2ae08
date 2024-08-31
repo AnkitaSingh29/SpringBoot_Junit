@@ -1,0 +1,17 @@
+package com.example.demo.DAOTest;
+
+public class EmployeeRepositoryTest {
+
+	
+	   @Test
+	    public void should_save_user() {
+	        //Given
+	        User user = givenUser();
+	        //When
+	        user = userRepository.save(user);
+	        //Then
+	        User actual = testEntityManager.find(User.class, user.getId());
+	        assertEquals(actual, user);
+	    }
+	
+}

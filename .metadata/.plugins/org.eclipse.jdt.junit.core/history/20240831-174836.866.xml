@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="EmployeeControllerIntegrationTest" project="EmployeeApplication" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.example.demo.ControllerTest.EmployeeControllerIntegrationTest" time="6.992" displayname="EmployeeControllerIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.ControllerTest.EmployeeControllerIntegrationTest]">
+    <testcase name="test_1_should_save_employee" classname="com.example.demo.ControllerTest.EmployeeControllerIntegrationTest" time="6.992" displayname="test_1_should_save_employee()" uniqueid="[engine:junit-jupiter]/[class:com.example.demo.ControllerTest.EmployeeControllerIntegrationTest]/[method:test_1_should_save_employee()]"/>
+  </testsuite>
+</testrun>

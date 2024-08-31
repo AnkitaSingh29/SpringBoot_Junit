@@ -1,0 +1,13 @@
+package com.example.demo.ServiceTest;
+
+import org.junit.jupiter.api.Test;
+
+public class EmployeeServiceTest {
+	
+	@Test
+	private void should_save_user()
+	{
+		
+	}
+
+}

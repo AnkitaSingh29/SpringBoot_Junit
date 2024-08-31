@@ -1,0 +1,40 @@
+package com.example.demo.DAOTest;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.EmployeeApplication.DAO.EmployeeDatabase;
+import com.EmployeeApplication.Model.Employee;
+
+public class EmployeeRepositoryTest {
+	
+	
+	
+	    private static final String name = "NAME";
+	    private static final String designation = "UPDATED_NAME";
+	    private static final String company = "UPDATED_Company";
+
+		@Autowired
+		private EmployeeDatabase empRepository;
+	
+	   @Test
+	    public void should_save_user() {
+	        //Given
+	        Employee emp = getEmployee();
+	        //When
+	        emp = userRepository.save(user);
+	        //Then
+	        User actual = testEntityManager.find(User.class, user.getId());
+	        assertEquals(actual, user);
+	    }
+	   
+	   
+	   private Employee givenUpdatedEmp() {
+	        Employee emp = new Employee();
+	        emp.setCompany(company);
+	        emp.setDesignation(designation);
+	        emp.setName(name);
+	        return emp;
+	    }
+	
+}

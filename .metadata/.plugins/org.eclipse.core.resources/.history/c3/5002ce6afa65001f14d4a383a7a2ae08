@@ -1,0 +1,12 @@
+package com.example.demo.helper;
+
+import org.springframework.http.HttpEntity;
+
+public class HTTPHelper {
+	public static HttpEntity<String> getHttpEntity() {
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.set("Content-Type", "application/json;charset=UTF-8");
+        return new HttpEntity<>(httpHeaders);
+    }
+
+}

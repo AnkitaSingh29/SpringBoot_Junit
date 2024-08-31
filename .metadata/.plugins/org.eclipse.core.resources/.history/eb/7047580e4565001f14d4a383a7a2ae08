@@ -1,0 +1,9 @@
+package com.EmployeeApplication.DTO;
+
+import java.util.List;
+
+import com.EmployeeApplication.Model.Employee;
+
+public class EmployeesDTO {
+	List<Employee> employeesDTO;
+}
