@@ -2,22 +2,22 @@ package com.example.demo.DAOTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Test;
+import java.util.Optional;
 
+import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.test.context.ContextConfiguration;
 
-
-
-
-
+import com.EmployeeApplication.EmployeeApplication;
 import com.EmployeeApplication.DAO.EmployeeDatabase;
 import com.EmployeeApplication.Model.Employee;
 
 @DataJpaTest
+@ContextConfiguration(classes = EmployeeApplication.class)
 public class EmployeeRepositoryTest {
 	
 	
@@ -32,6 +32,10 @@ public class EmployeeRepositoryTest {
 	    @Autowired
 	    private TestEntityManager testEntityManager;
 		
+	    
+
+	    
+	    
 	   @Test
 	    public void should_save_user() {
 		   System.out.println("*Inside the EmployeeRepositoryTest_should_save_user()*");
