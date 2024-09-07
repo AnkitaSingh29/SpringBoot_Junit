@@ -1,7 +1,0 @@
-INDEX VERSION 1.134+C:\Users\ankit\eclipse-workspace_Spring\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3435648363.index
-4266308897.index
-1582438605.index
-290197755.index
-738853012.index
