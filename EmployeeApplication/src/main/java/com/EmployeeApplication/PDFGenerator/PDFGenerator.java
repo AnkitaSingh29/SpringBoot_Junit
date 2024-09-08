@@ -65,10 +65,7 @@ public class PDFGenerator {
 		
 	}
 	
-	public String getPdfNameWithDate() {
-		String localDateString = LocalDateTime.now().format(DateTimeFormatter.ofPattern(reportFileNameDateFormat));
-		return PdfName+"-"+localDateString+".pdf";
-	}
+
 	private void createTable(Document document, int columns) throws DocumentException
 	{
 		

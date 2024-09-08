@@ -40,7 +40,7 @@ public class EmployeeController {
 	}
 	
 	
-	@PostMapping("/{id}")
+	@GetMapping("/{id}")
 	public Employee findByID(@PathVariable int id)
 	{
 		return service.findById(id);
@@ -56,7 +56,7 @@ public class EmployeeController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public  ResponseEntity<String> deleteEmployee(@RequestBody int id)
+	public  ResponseEntity<String> deleteEmployee(@PathVariable int id)
 	{
 		return service.deleteEmployee(id);
 		
@@ -64,13 +64,13 @@ public class EmployeeController {
 
 
 	
-	@PostMapping("/getEmployeeByName")
+	@GetMapping("/getEmployeeByName")
 	public ResponseEntity<Employee> getEmployeeByNameRequestParam(@RequestParam String Empname)
 	{
 		return service.getEmployeeByName(Empname);
 	}
 	
-	@PostMapping("/getEmployeeByName/{Empname}")
+	@GetMapping("/getEmployeeByName/{Empname}")
 	public ResponseEntity<Employee> getEmployeeByNamePathParam(@PathVariable String Empname)
 	{
 		return service.getEmployeeByName(Empname);
